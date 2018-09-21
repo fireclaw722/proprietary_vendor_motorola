@@ -542,7 +542,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/motorola/addison/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so \
     vendor/motorola/addison/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@1.0_vendor.so \
-    vendor/motorola/addison/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
+    vendor/motorola/addison/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.aov.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.aov.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.mod.protocols.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.mod.protocols.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.mod.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.mod.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.moto.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.moto.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.motodisplay.xml \
+    vendor/motorola/addison/proprietary/lib/libmodmanager_system.so:system/lib/libmodmanager_system.so
 
 PRODUCT_PACKAGES += \
     QtiTelephonyService \
@@ -552,4 +558,8 @@ PRODUCT_PACKAGES += \
     com.qualcomm.location \
     qcrilmsgtunnel \
     TimeService \
-    colorservice
+    colorservice \
+    ModFmwkProxyService \
+    ModService \
+    ProjectorApp
+
